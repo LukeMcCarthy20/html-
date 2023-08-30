@@ -36,9 +36,11 @@ let userAsk =prompt('Do you have any questions: 1 yes and 2 no')
 let message2;
 
 if(userAsk = 1){
-    message2 = ' ' + 'Someone will give you a call soon!'
+    message2 = ' ' + 'Someone will give you a call soon!';
 } else if(userTime = 2){
-    message = ' ' + 'Enjoy The Website';
+    message2 = ' ' + 'Enjoy The Website';
+}else{
+    message2 =' ' + 'not a vaild response'
 }
 
 document.write(message2)
