@@ -63,6 +63,7 @@
 
 let message;
 let userPlay;
+let error;
 
 function greet() {
     console.clear(); // Clears the console
@@ -76,7 +77,7 @@ function greet() {
     } else if(userPlay == 1) {
         message = 'good job'
     } else{
-        message = ' ' + "Try again..." + 'Have you played elden ring: Type 1 for YES and 2 for NO?'
+        error = prompt('try again- CLICK ENTER')
         greet(userName);
     }
 
