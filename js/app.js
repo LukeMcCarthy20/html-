@@ -21,8 +21,8 @@
 
 //if(userPlay < 1){
  //message = 'you should play Elden Ring!';
-///} else{
-  //  message = 'good job'
+//} else{
+    //message = 'good job'
 //}
 //console.log('user response',message);
 
@@ -36,7 +36,7 @@
 //let message2;
 
 //if(userAsk = 1){
-    //message2 = ' ' + 'Someone will give you a call soon!';
+//message2 = ' ' + 'Someone will give you a call soon!';
 //} else if(userTime = 2){
     //message2 = ' ' + 'Enjoy The Website';
 //}else{
@@ -61,10 +61,28 @@
 
 /** PRACTICE AFTER READING ASSIGNMENT 7 */
 
-let userName = prompt('Enter your name:');
+let message;
+let userPlay;
 
-function greet(userName) {
+function greet() {
+    console.clear(); // Clears the console
+    let userName = prompt('Enter your name:');
     console.log("Hello, " + userName + "!");
+
+    userPlay = prompt('Have you played elden ring: Type 1 for YES and 2 for NO?');
+
+    if (userPlay == 2) {
+        message = 'you should play Elden Ring!';
+    } else if(userPlay == 1) {
+        message = 'good job'
+    } else{
+        message = ' ' + "Try again..." + 'Have you played elden ring: Type 1 for YES and 2 for NO?'
+        greet(userName);
+    }
+
+    console.log('user response', message);
+
+    return document.write('Hello, ' + message + ' ' + userName + '.');
 }
 
 greet(userName);
