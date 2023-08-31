@@ -1,49 +1,49 @@
 "use strict";
 
-console.log(':)');
+//console.log(':)');
 
 
-let userName = prompt('what is your name?');
+//let userName = prompt('what is your name?');
 //console.log(indetifer, value)
 
-console.log('user name:', userName);
+//console.log('user name:', userName);
 
-let userPlay = prompt('Have you played elden ring: Type 1 for YES and 2 for NO?');
+//let userPlay = prompt('Have you played elden ring: Type 1 for YES and 2 for NO?');
 
-console.log('Answer:', userPlay);
+//console.log('Answer:', userPlay);
 
 //you can respond using condtions
 
 //if(some condition is true){
     //then we will do some code stuff here}
-let message;
+//let message;
 //this creates a variable to hold a value
 
-if(userPlay < 1){
- message = 'you should play Elden Ring!';
-} else{
-    message = 'good job'
-}
-console.log('user response',message);
+//if(userPlay < 1){
+ //message = 'you should play Elden Ring!';
+///} else{
+  //  message = 'good job'
+//}
+//console.log('user response',message);
 
-document.write('Hello, ' + message + ' ' + userName + '.');
+//document.write('Hello, ' + message + ' ' + userName + '.');
 
-let userFun = confirm('do you like my website?');
+//let userFun = confirm('do you like my website?');
 
-console.log('user response', userFun);
+//console.log('user response', userFun);
 
-let userAsk =prompt('Do you have any questions: 1 yes and 2 no')
-let message2;
+//let userAsk =prompt('Do you have any questions: 1 yes and 2 no')
+//let message2;
 
-if(userAsk = 1){
-    message2 = ' ' + 'Someone will give you a call soon!';
-} else if(userTime = 2){
-    message2 = ' ' + 'Enjoy The Website';
-}else{
-    message2 =' ' + 'not a vaild response'
-}
+//if(userAsk = 1){
+    //message2 = ' ' + 'Someone will give you a call soon!';
+//} else if(userTime = 2){
+    //message2 = ' ' + 'Enjoy The Website';
+//}else{
+    //message2 =' ' + 'not a vaild response'
+//}
 
-document.write(message2)
+//document.write(message2)
 //our if conditons will run if the condition is ture
 
 
@@ -58,3 +58,13 @@ document.write(message2)
  * Methods 
  * 1. prompting
  */
+
+/** PRACTICE AFTER READING ASSIGNMENT 7 */
+
+let userName = prompt('Enter your name:');
+
+function greet(userName) {
+    console.log("Hello, " + userName + "!");
+}
+
+greet(userName);
