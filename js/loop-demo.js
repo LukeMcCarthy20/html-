@@ -111,7 +111,7 @@ for(let i = 0; i < userInputParsed; i++){
   let image = document.createElement('img');
   // console.log('empty image tag: ',image);
   //we add actual img link. 
-  image.setAttribute('src', 'images/');
+  image.setAttribute('src', 'images/header.jpg');
 
   // is how we get the image to the html it appends each image to the browser 
   //we give the image to the <li>
