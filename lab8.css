@@ -33,10 +33,24 @@ h2 {
 #font1 {
     color: #000000";
 }
+main li {
+    float: left;
+    /*        t   r     b    l  */
+    margin: 30px 30px 30px 30px;
+  }
 
-
-
-
-
-
-
+footer {
+    height: 200px;
+    background-color: black;
+    clear: both;
+  }
+  img {
+    display: block;
+    margin:  auto;
+    
+  }
+  
+  footer section img {
+    height: 200px;
+    width: 200px;
+  }
